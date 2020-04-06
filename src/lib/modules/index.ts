@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux'
+import { connectRouter } from 'connected-react-router'
 import detail from './detail';
 import favorite from './favorite';
 import loading from './loading';
 import search from './search';
 import trends from './trends';
 
-const rootReducer = combineReducers({
+const rootReducer =  combineReducers({
     
 });
 

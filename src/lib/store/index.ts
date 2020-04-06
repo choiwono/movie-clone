@@ -14,4 +14,4 @@ function configStore() {
     return store;
 }
 
-export { configStore }; 
+export default configStore; 
