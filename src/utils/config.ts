@@ -10,3 +10,4 @@ export const imageSize = {
 };
 
 export const langauge = `&language=ko-KR`;
+
