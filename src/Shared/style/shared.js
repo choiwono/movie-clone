@@ -61,6 +61,7 @@ const mixin = {
         overflow-x: hidden;
         overflow-y: auto;
     `,
+    
     backgroundImage: imageURL => css`
         background-image: url("${imageURL}");
         background-position: 50% 50%;
