@@ -1,17 +1,18 @@
-const CracoAlias = require("craco-alias");
+const path = require( 'path' );
 
-module.exports = {
-  plugins: [
-    {
-      plugin: CracoAlias,
-      options: {
-        source: "tsconfig",
-        // baseUrl SHOULD be specified
-        // plugin does not take it from tsconfig
-        baseUrl: "./src",
-        // tsConfigPath should point to the file where "baseUrl" and "paths" are specified
-        tsConfigPath: "./tsconfig.extend.json"
+module.exports = function () {
+  return {
+    webpack: {
+      alias: {
+        '@': path.resolve( __dirname, 'src' )
       }
-    }
-  ]
-};
+    },
+    jest: {
+      configure: {
+        moduleNameMapper: {
+          '^@/(.*)$': '<rootDir>/src/$1',
+        },
+      },
+    },
+  }
+}

@@ -51,6 +51,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.4",
-    "craco-alias": "^2.1.1"
+    "craco-alias": "^2.1.1",
+    "tslint": "^6.1.1"
   }
 }

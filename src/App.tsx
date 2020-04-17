@@ -1,10 +1,15 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
 import HeaderMobile from '../src/components/Layout/Header/HeaderMobile'
+//import GlobalStyle from '@/Shared/style/GlobalStyle';
+import Router from './routes'
 
 const App: React.FC = () => {
   return (
-    <HeaderMobile />
+    <Fragment>
+      {/*<GlobalStyle />*/}
+      <Router />
+      <HeaderMobile />
+    </Fragment>
   );
 }
 
