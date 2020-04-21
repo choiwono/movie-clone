@@ -1,17 +1,17 @@
-import styled, { css } from '@/Shared/style/node_modules/styled-components'
+import styled, { css } from 'styled-components'
 // Layout component
 
-const GridWrapper = styled.div`
+export const GridWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
 `;
 
-const GridItem = styled.div`
+export const GridItem = styled.div`
     flex: 1;
 `; 
 
-const color = {
+export const color = {
     primary: '#2382DB',
     success: '#0B875B',
     danger: '#E13C3C',
@@ -38,25 +38,25 @@ const color = {
     borderInputFocus: '#4c9aff',
 };
 
-const font = {
+export const font = {
     regular : 'font-weight: normal;',
     bold : 'font-weight: bolder;',
     size : size => `font-size: ${size}px`,
 }
 
-const device = {
-    Moblie : '450px',
+export const device = {
+    Moblie : '320px',
     Tablet : '768px',
     TabletL : '992px',
     Laptop : '1200px',
     LaptopL : '1440px', 
 }
 
-const zIndex = {
+export const zIndex = {
     modal : 1000,
 }
 
-const mixin = {
+export const mixin = {
     scrollableY: css`
         overflow-x: hidden;
         overflow-y: auto;
@@ -71,7 +71,7 @@ const mixin = {
     `
 }
 
-export default {
+/*export default {
     GridWrapper,
     GridItem,
     color,
@@ -79,4 +79,4 @@ export default {
     device,
     zIndex,
     mixin,
-};
+};*/

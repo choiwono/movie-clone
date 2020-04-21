@@ -9,7 +9,6 @@ const Home : React.FC<Props> = props => {
 
     return (
         <Fragment>
-            홈
         </Fragment>
     );
 };
