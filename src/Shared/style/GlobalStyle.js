@@ -231,6 +231,10 @@ const GlobalStyle = createGlobalStyle`
     .bm-overlay {
         background: rgba(0, 0, 0, 0.3);
     }
+
+    a {
+        text-decoration: none;
+    }
 `
 
 export default GlobalStyle;

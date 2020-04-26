@@ -10,7 +10,6 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Router />
       <ToastContainer />
-      <HeaderMobile />
     </Fragment>
   );
 }

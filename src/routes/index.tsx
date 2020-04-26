@@ -6,15 +6,19 @@ import MovieDetail from '@/pages/MovieDetail'
 import { useMediaQuery } from 'react-responsive';
 import { device } from '@/Shared/style/shared';
 import HeaderMobile from '@/components/Layout/Header/HeaderMobile'
+import LapTopHeader from '@/components/Layout/Header/LapTopHeader'
 
 const Routes = () => {
-    const isMobileOrTabletHeader = useMediaQuery({ 
-        query : `(min-device-width: ${device.Tablet})`
+    
+    const isTableOrLabtopHeader = useMediaQuery({
+        query : `(min-device-width : ${device.Tablet})`
     })
 
     return (
         <Router>
-            { isMobileOrTabletHeader &&  <HeaderMobile /> }
+            { isTableOrLabtopHeader ? 
+                <LapTopHeader /> 
+              : <HeaderMobile/> }
             <Switch>
                 <Route path="/movies/detail/:id" component={MovieDetail} />
                 <Route path="/movies/:category" component={Movies} />

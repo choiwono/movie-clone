@@ -1,10 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import * as React from 'react';
 
-function useOnClickOutside(ref, handler) {
+/*interface Ref {
+    propsRef : React.useRef<HTMLElement>;
+}*/
+
+interface Handler {
+    closeHandler : () => void;
+}
+
+function useOnClickOutside(ref : Ref, handler : Handler) {
     useEffect(
         () => {
             const listener = event => {
-                if (!ref.current || ref.current.contains(event.target) ) {
+                if (!ref.propsRef.current || ref.current.contains(event.target) ) {
                     return;
                 }
 

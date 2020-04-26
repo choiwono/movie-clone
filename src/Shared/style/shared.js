@@ -25,6 +25,7 @@ export const color = {
     textWhite: '#ffffff',
     textLink: '#0052cc',
 
+    backgroundDarkHeader: '#2F2F37',
     backgroundDarkGrey: '#c2c4c7',
     backgroundDarkPrimary: '#0747A6',
     backgroundLightGrey: '#dfe1e6',
