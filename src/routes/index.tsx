@@ -19,6 +19,7 @@ const Routes = () => {
             { isTableOrLabtopHeader ? 
                 <LapTopHeader /> 
               : <HeaderMobile/> }
+            
             <Switch>
                 <Route path="/movies/detail/:id" component={MovieDetail} />
                 <Route path="/movies/:category" component={Movies} />
